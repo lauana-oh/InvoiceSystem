@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/categories','CategoryController');
+Route::get('/categories/{id}/confirmDelete','CategoryController@confirmDelete');
