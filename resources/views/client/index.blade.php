@@ -26,8 +26,8 @@
                             <td>{{$client->phone}}</td>
                             <td align="char">{{$client->address}} - {{$client->city}} - {{$client->region}} -
                                 {{$client->country}} </td>
-                            <td><a href="/client/{{$client->id}}/edit">Edit</a></td>
-                            <td><a href="/client/{{$client->id}}/confirmDelete">Delete</a> </td>
+                            <td><a href="/clients/{{$client->id}}/edit">Edit</a></td>
+                            <td><a href="/clients/{{$client->id}}/confirmDelete">Delete</a> </td>
                         </tr>
                     @endforeach
                 </table>

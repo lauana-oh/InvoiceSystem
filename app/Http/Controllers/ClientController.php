@@ -49,16 +49,16 @@ class ClientController extends Controller
             'country' => 'max:255',
         ]);
         
-        $category = new Client();
-        $category->name = $validData['name'];
-        $category->nit = $validData['nit'];
-        $category->email = $validData['email'];
-        $category->phone = $validData['phone'];
-        $category->address = $validData['address'];
-        $category->city = $validData['city'];
-        $category->region = $validData['region'];
-        $category->country = $validData['country'];
-        $category->save();
+        $client = new Client();
+        $client->name = $validData['name'];
+        $client->nit = $validData['nit'];
+        $client->email = $validData['email'];
+        $client->phone = $validData['phone'];
+        $client->address = $validData['address'];
+        $client->city = $validData['city'];
+        $client->region = $validData['region'];
+        $client->country = $validData['country'];
+        $client->save();
         
         return redirect('/clients');
     }
@@ -82,7 +82,9 @@ class ClientController extends Controller
      */
     public function edit(Client $client)
     {
-        //
+        return view('client.edit', [
+            'client' => $client
+        ]);
     }
 
     /**
@@ -94,7 +96,28 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
-        //
+        $validData = $request->validate([
+            'name' => 'required | min:3',
+            'nit' => 'required | numeric | min:5',
+            'email' => 'email',
+            'phone' => 'min:7',
+            'address' => 'max:255',
+            'city' => 'max:255',
+            'region' => 'max:255',
+            'country' => 'max:255',
+        ]);
+    
+        $client->name = $validData['name'];
+        $client->nit = $validData['nit'];
+        $client->email = $validData['email'];
+        $client->phone = $validData['phone'];
+        $client->address = $validData['address'];
+        $client->city = $validData['city'];
+        $client->region = $validData['region'];
+        $client->country = $validData['country'];
+        $client->save();
+    
+        return redirect('/clients');
     }
 
     /**

@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col">
-            <h1>Edit {{$category->name}} Clients</h1>
+            <h1>Edit {{$client->name}} Clients</h1>
             <div class="row">
                 @if($errors->any())
                     <div class="alert alert-danger">
@@ -16,13 +16,12 @@
                 @endif
             </div>
             <div class="row">
-                <form action="/client/{{$client->id}}" method="post">
+                <form action="/clients/{{$client->id}}" method="post">
                     @csrf
                     @method('put')
-                    <input class="form-group">
                         <label for="name">Full name OR Company Name:</label>
                         <input type="text" class="form-control" id="name" name="name"
-                               placeholder="Type company or person full name" value="{{ old("name", $category->name) }}">
+                               placeholder="Type company or person full name" value="{{ old("name", $client->name) }}">
                         <label for="nit">NIT:</label>
                         <input type="number" class="form-control" name="nit"
                                id="nit" value="{{ old("nit", $client->nit) }}"
@@ -51,7 +50,7 @@
                 </form>
             </div>
             <div class="row pt-4">
-                <a class="btn btn-secondary" href="/client/">Back</a>
+                <a class="btn btn-secondary" href="/clients/">Back</a>
             </div>
         </div>
     </div>
