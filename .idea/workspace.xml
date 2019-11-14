@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1bd66c4-3104-41fb-95f0-785471c80c4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/client/confirmDelete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/product/confirmDelete.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/product" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/product" />
       <recent name="$PROJECT_DIR$/resources/views/client" />
       <recent name="$PROJECT_DIR$/resources/views/category" />
       <recent name="$PROJECT_DIR$/resources/views/Category" />
@@ -73,7 +73,7 @@
       <updated>1573685870415</updated>
       <workItem from="1573685871964" duration="7477000" />
       <workItem from="1573693988358" duration="111000" />
-      <workItem from="1573694114448" duration="29350000" />
+      <workItem from="1573694114448" duration="37456000" />
     </task>
     <servers />
   </component>
