@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1bd66c4-3104-41fb-95f0-785471c80c4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/category/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/category" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/category" />
       <recent name="$PROJECT_DIR$/resources/views/Category" />
     </key>
   </component>
@@ -69,7 +71,7 @@
       <updated>1573685870415</updated>
       <workItem from="1573685871964" duration="7477000" />
       <workItem from="1573693988358" duration="111000" />
-      <workItem from="1573694114448" duration="630000" />
+      <workItem from="1573694114448" duration="7398000" />
     </task>
     <servers />
   </component>
@@ -81,6 +83,10 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="458" y="231" width="510" height="344" key="#com.intellij.tools.ToolEditorDialog/70.27.1296.741@70.27.1296.741" timestamp="1573693899021" />
+    <state x="301" y="143" width="824" height="515" key="IDE.errors.dialog" timestamp="1573699169587">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="301" y="143" width="824" height="515" key="IDE.errors.dialog/70.27.1296.741@70.27.1296.741" timestamp="1573699169587" />
     <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1573693535964">
       <screen x="70" y="27" width="1296" height="741" />
     </state>

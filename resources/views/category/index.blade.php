@@ -5,22 +5,26 @@
         <div class="col">
             <h1>Categories</h1>
             <div class="row">
-                <a href="/categories/create">Create a new category</a>
+                <a class="btn btn-primary" href="/categories/create">Create a new category</a>
             </div>
-            <table class="table">
-                @foreach($categories as $category)
-                    <tr>
-                        <th>ID</th>
-                        <th>Category</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>{{$category->id}}</td>
-                        <td>{{$category->name}}</td>
-                        <td>{{$category->description}}</td>
-                    </tr>
-                @endforeach
-            </table>
+            <div class="row">
+                <table class="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>IVA</th>
+                        </tr>
+                    @foreach($categories as $category)
+                        <tr>
+                            <td>{{$category->id}}</td>
+                            <td>{{$category->name}}</td>
+                            <td>{{$category->description}}</td>
+                            <td>{{$category->iva}}</td>
+                        </tr>
+                    @endforeach
+                </table>
+            </div>
         </div>
     </div>
 @endsection

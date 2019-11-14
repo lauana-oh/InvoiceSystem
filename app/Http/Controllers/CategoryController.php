@@ -22,22 +22,34 @@ class CategoryController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        return view('category.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function store(Request $request)
     {
-        //
+        $validData = $request->validate([
+            'name' => 'required | min:3',
+            'description' => 'required | min: 5',
+            'iva' => 'numeric'
+        ]);
+        
+        $category = new Category();
+        $category->name = $validData['name'];
+        $category->description = $validData['description'];
+        $category->iva = $validData['iva'];
+        $category->save();
+        
+        return redirect('/categories');
     }
 
     /**
