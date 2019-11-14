@@ -109,7 +109,6 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //$cat = Category::find($category);
         $category->delete();
         return redirect('/categories');
     }

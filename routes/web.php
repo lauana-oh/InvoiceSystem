@@ -19,3 +19,4 @@ Route::resource('/categories','CategoryController');
 Route::get('/categories/{id}/confirmDelete','CategoryController@confirmDelete');
 
 Route::resource('/clients','ClientController');
+    Route::get('/clients/{id}/confirmDelete','ClientController@confirmDelete');

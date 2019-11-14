@@ -128,6 +128,15 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete();
+        return redirect('/clients');
+    }
+    
+    public function confirmDelete($id)
+    {
+        $client= Client::find($id);
+        return view('client.confirmDelete', [
+            'client' => $client
+        ]);
     }
 }
