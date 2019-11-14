@@ -5,7 +5,7 @@
         <div class="col">
             <h1>Clients</h1>
             <div class="row">
-                <a class="btn btn-primary m-2 mb-4" href="/client/create">Create a new client</a>
+                <a class="btn btn-primary m-2 mb-4" href="/clients/create">Create a new client</a>
             </div>
             <div class="row">
                 <table class="table">
@@ -24,10 +24,10 @@
                             <td>{{$client->nit}}</td>
                             <td>{{$client->email}}</td>
                             <td>{{$client->phone}}</td>
-                            <td>{{$client->adress}} - {{$client->city}} - {{$client->region}} -
+                            <td align="char">{{$client->address}} - {{$client->city}} - {{$client->region}} -
                                 {{$client->country}} </td>
-                            <td><a href="/client/{{$category->id}}/edit">Edit</a></td>
-                            <td><a href="/client/{{$category->id}}/confirmDelete">Delete</a> </td>
+                            <td><a href="/client/{{$client->id}}/edit">Edit</a></td>
+                            <td><a href="/client/{{$client->id}}/confirmDelete">Delete</a> </td>
                         </tr>
                     @endforeach
                 </table>

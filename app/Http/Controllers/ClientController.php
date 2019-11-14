@@ -23,11 +23,11 @@ class ClientController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        return view('client.create');
     }
 
     /**
@@ -38,7 +38,29 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validData = $request->validate([
+            'name' => 'required | min:3',
+            'nit' => 'required | numeric | min:5',
+            'email' => 'email',
+            'phone' => 'min:7',
+            'address' => 'max:255',
+            'city' => 'max:255',
+            'region' => 'max:255',
+            'country' => 'max:255',
+        ]);
+        
+        $category = new Client();
+        $category->name = $validData['name'];
+        $category->nit = $validData['nit'];
+        $category->email = $validData['email'];
+        $category->phone = $validData['phone'];
+        $category->address = $validData['address'];
+        $category->city = $validData['city'];
+        $category->region = $validData['region'];
+        $category->country = $validData['country'];
+        $category->save();
+        
+        return redirect('/clients');
     }
 
     /**
