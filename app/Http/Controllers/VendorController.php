@@ -14,7 +14,9 @@ class VendorController extends Controller
      */
     public function index()
     {
-        //
+        return view('vendor.index', [
+            'vendors' => Vendor::all()
+        ]);
     }
 
     /**
@@ -24,7 +26,7 @@ class VendorController extends Controller
      */
     public function create()
     {
-        //
+        return view('vendor.create');
     }
 
     /**
@@ -35,7 +37,29 @@ class VendorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validData = $request->validate([
+            'name' => 'required | min:3',
+            'nit' => 'required | numeric | min:5',
+            'email' => 'email',
+            'phone' => 'min:7',
+            'address' => 'max:255',
+            'city' => 'max:255',
+            'region' => 'max:255',
+            'country' => 'max:255',
+        ]);
+    
+        $vendor = new Vendor();
+        $vendor->name = $validData['name'];
+        $vendor->nit = $validData['nit'];
+        $vendor->email = $validData['email'];
+        $vendor->phone = $validData['phone'];
+        $vendor->address = $validData['address'];
+        $vendor->city = $validData['city'];
+        $vendor->region = $validData['region'];
+        $vendor->country = $validData['country'];
+        $vendor->save();
+    
+        return redirect('/vendors');
     }
 
     /**
@@ -57,7 +81,9 @@ class VendorController extends Controller
      */
     public function edit(Vendor $vendor)
     {
-        //
+        return view('vendor.edit', [
+            'vendor' => $vendor
+        ]);
     }
 
     /**
@@ -69,7 +95,28 @@ class VendorController extends Controller
      */
     public function update(Request $request, Vendor $vendor)
     {
-        //
+        $validData = $request->validate([
+        'name' => 'required | min:3',
+        'nit' => 'required | numeric | min:5',
+        'email' => 'email',
+        'phone' => 'min:7',
+        'address' => 'max:255',
+        'city' => 'max:255',
+        'region' => 'max:255',
+        'country' => 'max:255',
+        ]);
+    
+        $vendor->name = $validData['name'];
+        $vendor->nit = $validData['nit'];
+        $vendor->email = $validData['email'];
+        $vendor->phone = $validData['phone'];
+        $vendor->address = $validData['address'];
+        $vendor->city = $validData['city'];
+        $vendor->region = $validData['region'];
+        $vendor->country = $validData['country'];
+        $vendor->save();
+    
+        return redirect('/vendors');
     }
 
     /**
@@ -80,6 +127,14 @@ class VendorController extends Controller
      */
     public function destroy(Vendor $vendor)
     {
-        //
+        $vendor->delete();
+        return redirect('/vendors');
+    }
+    
+    public function confirmDelete($id){
+        $vendor = Vendor::find($id);
+        return view('vendor.confirmDelete', [
+            'vendor' =>$vendor
+        ]);
     }
 }
