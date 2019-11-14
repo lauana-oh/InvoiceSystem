@@ -27,8 +27,8 @@
                             <td>{{$product->unit_price}}</td>
                             <td>{{$product->stock}} </td>
                             <td>{{$product->category_id}}</td>
-                            <td><a href="/clients/{{$product->id}}/edit">Edit</a></td>
-                            <td><a href="/clients/{{$product->id}}/confirmDelete">Delete</a> </td>
+                            <td><a href="/products/{{$product->id}}/edit">Edit</a></td>
+                            <td><a href="/products/{{$product->id}}/confirmDelete">Delete</a> </td>
                         </tr>
                     @endforeach
                 </table>

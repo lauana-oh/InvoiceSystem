@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col">
-            <h1>Edit {{$client->name}} Clients</h1>
+            <h1>Edit {{$client->name}}</h1>
             <div class="row">
                 @if($errors->any())
                     <div class="alert alert-danger">

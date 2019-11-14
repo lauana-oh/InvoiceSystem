@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col">
-            <h1>Add a new product</h1>
+            <h1>Edit {{$product->name}}</h1>
             <div class="row">
                 @if($errors->any())
                     <div class="alert alert-danger">
@@ -16,27 +16,28 @@
                 @endif
             </div>
             <div class="row">
-                <form action="/products" method="post">
+                <form action="/products/{{$product->id}}" method="post">
                     @csrf
+                    @method('put')
                     <label for="name">Product name:</label>
                     <input type="text" class="form-control" id="name" name="name"
-                           placeholder="Type company or person full name" value="{{ old("name") }}">
+                           placeholder="Type company or person full name" value="{{ old("name",$product->name) }}">
                     <label for="description">Description:</label>
                     <input type="text" class="form-control" name="description"
-                           id="description" value="{{ old("description") }}"
+                           id="description" value="{{ old("description", $product->description) }}"
                            placeholder="Describe your product">
                     <label for="unit_price">Unit price:</label>
                     <input type="number" class="form-control" id="unit_price" name="unit_price"
-                           value="{{ old("unit_price") }}" step="0.01"
+                           value="{{ old("unit_price",$product->unit_price) }}" step="0.01"
                            placeholder="$ 00.00">
                     <label for="stock">Units in stock:</label>
                     <input type="number" class="form-control" id="stock" name="stock" step="0.01"
-                           value="{{old("stock")}}" placeholder="000">
+                           value="{{old("stock",$product->stock)}}" placeholder="000">
                     <button class="btn btn-primary form-control mt-2" type="submit">Submit</button>
                 </form>
             </div>
             <div class="row pt-4">
-                <a class="btn btn-secondary" href="/products">Back</a>
+                <a class="btn btn-secondary" href="/products/">Back</a>
             </div>
         </div>
     </div>
