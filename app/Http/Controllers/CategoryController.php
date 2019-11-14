@@ -66,24 +66,39 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Category  $category
-     * @return \Illuminate\Http\Response
+     * @param  int  $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit($id)
     {
-        //
+        $category = Category::find($id);
+        return view('category.edit', [
+            'category' => $category
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Category  $category
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, $id)
     {
-        //
+        $category = Category::find($id);
+        $validData = $request->validate([
+            'name' => 'required | min:3',
+            'description' => 'required | min: 5',
+            'iva' => 'numeric'
+        ]);
+    
+        $category->name = $validData['name'];
+        $category->description = $validData['description'];
+        $category->iva = $validData['iva'];
+        $category->save();
+        
+        return redirect('/categories');
     }
 
     /**
