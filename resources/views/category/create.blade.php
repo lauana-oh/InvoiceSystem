@@ -26,8 +26,8 @@
                         <input type="text" class="form-control" name="description"
                                id="description" placeholder="Describe this new category...">
                         <label for="iva">I.v.a.</label>
-                        <input type="number" class="form-control" id="iva" name="iva" step="0.001"
-                               placeholder="Type the corresponded iva of this category">
+                        <input type="number" class="form-control" id="iva" name="iva" step="0.1"
+                               placeholder="Type the corresponded iva of this category">%
                     </div>
                     <button class="btn btn-primary" type="submit">Submit</button>
                 </form>

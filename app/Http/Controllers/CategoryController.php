@@ -109,6 +109,16 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        //$cat = Category::find($category);
+        $category->delete();
+        return redirect('/categories');
+    }
+    
+    public function confirmDelete($id)
+    {
+        $category = Category::find($id);
+        return view('category.confirmDelete', [
+            'category' => $category
+        ]);
     }
 }

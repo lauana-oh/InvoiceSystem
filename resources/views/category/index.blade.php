@@ -15,14 +15,16 @@
                             <th>Description</th>
                             <th>IVA</th>
                             <th></th>
+                            <th></th>
                         </tr>
                     @foreach($categories as $category)
                         <tr>
                             <td>{{$category->id}}</td>
                             <td>{{$category->name}}</td>
                             <td>{{$category->description}}</td>
-                            <td>{{$category->iva}}</td>
+                            <td>{{$category->iva}} %</td>
                             <td><a href="/categories/{{$category->id}}/edit">Edit</a></td>
+                            <td><a href="/categories/{{$category->id}}/confirmDelete">Delete</a> </td>
                         </tr>
                     @endforeach
                 </table>

@@ -28,9 +28,9 @@
                                id="description" value="{{ old("description", $category->description) }}"
                                placeholder="Describe this new category...">
                         <label for="iva">I.v.a.</label>
-                        <input type="number" class="form-control" id="iva" name="iva" step="0.001"
+                        <input type="number" class="form-control" id="iva" name="iva" step="0.01"
                                value="{{ old("iva", $category->iva) }}"
-                               placeholder="Type the corresponded iva of this category">
+                               placeholder="Type the corresponded iva of this category">%
                     </div>
                     <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
