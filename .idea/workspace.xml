@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b1bd66c4-3104-41fb-95f0-785471c80c4a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/InvoiceSystem/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1Ta6TvkXNKbch0X2f3uZWHs8PEA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendors" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/vendors" />
+      <recent name="$PROJECT_DIR$/resources/views/product" />
+      <recent name="$PROJECT_DIR$/resources/views/client" />
+      <recent name="$PROJECT_DIR$/resources/views/category" />
+      <recent name="$PROJECT_DIR$/resources/views/Category" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1bd66c4-3104-41fb-95f0-785471c80c4a" name="Default Changelist" comment="" />
+      <created>1573685870415</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573685870415</updated>
+      <workItem from="1573685871964" duration="7477000" />
+      <workItem from="1573693988358" duration="111000" />
+      <workItem from="1573694114448" duration="37456000" />
+      <workItem from="1573838328980" duration="622000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="231" width="510" height="344" key="#com.intellij.tools.ToolEditorDialog" timestamp="1573693899021">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="458" y="231" width="510" height="344" key="#com.intellij.tools.ToolEditorDialog/70.27.1296.741@70.27.1296.741" timestamp="1573693899021" />
+    <state x="451" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1573756491746">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="451" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/70.27.1296.741@70.27.1296.741" timestamp="1573756491746" />
+    <state x="301" y="143" width="824" height="515" key="IDE.errors.dialog" timestamp="1573699169587">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="301" y="143" width="824" height="515" key="IDE.errors.dialog/70.27.1296.741@70.27.1296.741" timestamp="1573699169587" />
+    <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1573693535964">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1573693535964" />
+    <state x="207" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1573694098124">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="207" y="31" width="1022" height="737" key="SettingsEditor/70.27.1296.741@70.27.1296.741" timestamp="1573694098124" />
+    <state x="374" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1573694129701">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="374" y="225" key="com.intellij.ide.util.TipDialog/70.27.1296.741@70.27.1296.741" timestamp="1573694129701" />
+    <state x="486" y="317" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1573702791669">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="486" y="317" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1296.741@70.27.1296.741" timestamp="1573702791669" />
+    <state x="382" y="174" key="run.anything.popup" timestamp="1573756424460">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="382" y="174" key="run.anything.popup/70.27.1296.741@70.27.1296.741" timestamp="1573756424460" />
+  </component>
+</project>
